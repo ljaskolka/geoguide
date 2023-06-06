@@ -1,0 +1,80 @@
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #001d3d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #003566;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+}
+
+aside {
+  background-color: #000814;
+  width: 30%;
+  height: 100vh;
+  overflow-y: auto;
+}
+aside .country-list-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+aside .country-list-logo-container * {
+  border-radius: 25px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+aside .country-list-logo-container .country-logo-break {
+  height: 6px;
+  width: 80%;
+  background-color: white;
+}
+aside .country-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+aside .country-list-container .country-list-item-info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  width: 90%;
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+aside .country-list-container .country-list-item:hover {
+  background-color: #003566;
+  cursor: pointer;
+}
+aside .country-list-container .country-list-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  background-color: #001d3d;
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 5px 0;
+}
+aside .country-list-container .country-list-item * {
+  margin: 0 2px;
+  padding: 0;
+}
+aside .country-list-container .country-list-item .country-list-item-image {
+  width: 80%;
+  padding: 5px;
+  border-radius: 10px;
+}/*# sourceMappingURL=CountryList.css.map */
