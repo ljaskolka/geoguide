@@ -32,11 +32,3 @@ Start the server
 ```bash
   npm run start
 ```
-
-
-# GeoGuide
-
-GeoGuide is a web application that allows users to discover information about various countries around the world. The application provides an interactive list of countries, along with their flags, names, capitals, populations, and currencies. Users can search for specific countries or capitals, making it easy to find the desired information. Additionally, GeoGuide offers a responsive design, ensuring a seamless user experience on different devices, including desktops, tablets, and mobile phones. With GeoGuide, users can explore the world and enhance their knowledge about different countries in a user-friendly and visually appealing manner.
-# GeoGuide
-
-GeoGuide is a web application that allows users to discover information about various countries around the world. The application provides an interactive list of countries, along with their flags, names, capitals, populations, and currencies. Users can search for specific countries or capitals, making it easy to find the desired information. Additionally, GeoGuide offers a responsive design, ensuring a seamless user experience on different devices, including desktops, tablets, and mobile phones. With GeoGuide, users can explore the world and enhance their knowledge about different countries in a user-friendly and visually appealing manner.
