@@ -1,7 +1,7 @@
-$primary-color: #000814;
+$primary-color: #292929;
 $secondary-color: white;
-$third-color: #003566;
-$accent-color: #001d3d;
+$third-color: #d2ae00;
+$accent-color: #363636;
 $border-radius: 10px;
 
 ::-webkit-scrollbar {
@@ -18,11 +18,49 @@ $border-radius: 10px;
   background-color: $secondary-color;
 }
 
+.mobile-menu-icon {
+  display: none;
+}
+
 aside {
   background-color: $primary-color;
   width: 30%;
   height: 100vh;
   overflow-y: auto;
+
+  .country-list-search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .country-list-search-container input {
+    border: 3px solid white;
+    border-radius: 10px;
+    outline: 0;
+    padding: 10px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin-right: 5px;
+    width: 45%;
+  }
+
+  .country-list-search-container button {
+    margin-left: 5px;
+    min-width: 15%;
+    border-radius: 10px;
+    background-color: $third-color;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  #clean-search {
+    min-width: 10%;
+    background-color: red;
+  }
 
   .country-list-logo-container {
     display: flex;
@@ -89,6 +127,94 @@ aside {
         width: 80%;
         padding: 5px;
         border-radius: $border-radius;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  aside {
+    .country-list-search-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .country-list-search-container input {
+      width: 50%;
+    }
+
+    .country-list-search-container button {
+      height: 30px;
+      margin-top: 5px;
+    }
+
+    .country-list-logo-container {
+      * {
+        font-size: 2.25rem;
+      }
+    }
+
+    .country-list-container {
+      .country-list-item-info {
+        display: none;
+      }
+
+      .country-list-item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        * {
+          margin: 3px 2px;
+        }
+
+        .country-list-item-image {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    z-index: 999;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .country-list-menu {
+    display: none;
+  }
+
+  .country-list-menu.open {
+    display: block;
+  }
+
+  aside {
+    overflow-x: hidden;
+
+    .country-list-search-container input {
+      font-size: 14px;
+      padding: 5px;
+      margin-right: 0;
+    }
+
+    .country-list-search-container button {
+      margin-left: 0;
+      font-size: 14px;
+    }
+
+    .country-list-logo-container {
+      * {
+        font-size: 1rem;
       }
     }
   }

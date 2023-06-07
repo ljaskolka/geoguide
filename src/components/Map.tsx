@@ -1,7 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import { Map, GoogleApiWrapper } from "google-maps-react";
 
-const mapStyles = {
+const desktopMapStyles = {
+  width: "70%",
+  height: "100%",
+};
+
+const mobileMapStyles = {
   width: "100%",
   height: "100%",
 };
@@ -54,11 +59,19 @@ const MapContainer: React.FC<MapContainerProps> = ({ google, country }) => {
     }
   }, [country, google]);
 
+  const getMapStyles = () => {
+    if (window.innerWidth < 900) {
+      return mobileMapStyles;
+    }
+
+    return desktopMapStyles;
+  };
+
   return (
     <div>
       <Map
         google={google}
-        style={mapStyles}
+        style={getMapStyles()}
         initialCenter={{ lat: 51.5074, lng: -0.1278 }}
         ref={mapRef}
       />
