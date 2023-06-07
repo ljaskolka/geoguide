@@ -26,6 +26,11 @@ Install dependencies
 ```bash
   npm install
 ```
+In case you encounter any issues with the installation process, you can try using the --force flag to force the installation of dependencies. Run the following command:
+
+```bash
+  npm install --force
+```
 
 Start the server
 
